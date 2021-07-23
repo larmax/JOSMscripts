@@ -14,7 +14,7 @@ var hn = addr[key].tags[h];
 
 var au = hn.match(/([0-9]+)([^0-9]+)/).splice(2)[0] ;
 
-addr[key].tags[u] = au;
+addr[key].tags[u] = au.trim();
 
 addr[key].tags[h] = hn.match(/([0-9]+)([^0-9]+)/).splice(1)[0] ;
 });
